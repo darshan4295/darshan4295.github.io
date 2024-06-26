@@ -112,9 +112,15 @@ JSONeditor={
         <input name="jPaste" onfocus="this.blur()" type="button" onclick="treeBuilder.jsonPaste(this.parentNode.parentNode)" value="Paste">
     </div>
     <br><br>
-    <input type="checkbox" name="jbefore">Add children first/siblings before
+	<div>
+    <input type="checkbox"  name="jbefore" id="jbefore">
+	 <label for="jbefore">Add children first/siblings before</label>
+	 </div>
     <br>
-    <input type="checkbox" name="jPasteAsChild">Paste as child on objects & arrays
+	<div>
+    <input type="checkbox" name="jPasteAsChild" id="jPasteAsChild">
+	<label for="jPasteAsChild">Paste as child on objects & arrays</label>
+	</div>
     <br><br>
     <input type="button" value="Format JSON" onclick="JSONeditor.formatJSON()">
     <br><br>
